@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;              /* Removes outside space */
+    padding: 0;             /* Removes inside space */
+    box-sizing: border-box; /* Includes padding and border in total size */
+}
+
+body {
+    font-family: Arial;         /* Sets the font style */
+    background-color: white;    /* Sets background colour */
+}
+
+/* CSS for Nav Bar */
+.navbar {
+    display: flex;                  /* Places items in a row */
+    justify-content: space-between; /* Gives space between items */
+    align-items: center;            /* Aligns items vertically in center */
+    padding: 20px 6%;               /* Adds inside spacing */
+    border-bottom: 1px solid #eeeeee; /* Adds a light bottom border */
+}
+
+/* For logo */
+.logo {
+    display: flex;          /* Places image and text side by side */
+    align-items: center;
+    gap: 10px;              /* Adds space between image and text */
+}
+
+/* Sets the logo image size */
+.logo img {
+    width: 50px;            /* Sets image width */
+    height: 50px;           /* Sets image height */
+    object-fit: contain;    /* Fits complete image without cropping */
+}
+
+/* Sets the logo heading style */
+.logo h2 {
+    font-size: 28px;        /* Sets heading text size */
+}
+
+/* MENU SECTION CSS */
+
+/* Arranges menu items */
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+/* Menu text */
+.menu p {
+    font-size: 18px;
+    color: #333333;         /* Sets text colour */
+    cursor: pointer;
+    transition: 0.3s;       /* Makes hover effect smooth */
+}
+
+/* Menu Hover */
+.menu p:hover {
+    color: #5926d6;
+}
+
+/* Button */
+button {
+    background-color: #5926d6; /* Sets background colour of button */
+    color: white;              /* Sets text colour of button */
+    padding: 15px 25px;
+    border-radius: 10px;       /* Makes button corners rounded */
+    font-size: 16px;
+    cursor: pointer;           /* Shows hand cursor on hover */
+    transition: 0.3s;
+}
+
+/* HOME SECTION */
+
+/* Designs the main home section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 6%;
+    gap: 30px;
+}
+
+/* Gives half width to the text section */
+.content {
+    width: 50%;
+}
+
+/* Designs the main heading */
+.content h1 {
+    font-size: 50px;
+    line-height: 1.3;       /* Sets space between heading lines */
+    margin-bottom: 20px;    /* Adds space below heading */
+}
+
+/* Changes the colour of highlighted text */
+.content span {
+    color: #5926d6;
+}
+
+/* Designs the paragraph in home section */
+.content p {
+    font-size: 20px;
+    color: #626982;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Gives half width to the image section */
+.image {
+    width: 50%;
+}
+
+/* Makes the image fit inside its section */
+.image img {
+    width: 100%;
+}
+
+/* FEATURES SECTION */
+
+/* Arranges all three feature cards */
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    padding: 50px 4%;
+    background-color: #f8f6ff;
+}
+
+/* Designs each individual feature box */
+.box {
+    width: 33%;
+    padding: 30px 15px;
+    text-align: center;        /* Aligns text in center */
+    background-color: white;
+    border: 1px solid #eeeeee; /* Adds light border */
+    border-radius: 15px;
+    box-shadow: 0 5px 10px #dddddd; /* Adds shadow below the card */
+    transition: 0.3s;
+}
+
+/* Sets the size of feature images */
+.box img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Designs feature card headings */
+.box h2 {
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+/* Designs feature card paragraphs */
+.box p {
+    font-size: 18px;
+    color: #555555;
+}
